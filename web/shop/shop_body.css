@@ -1,0 +1,97 @@
+.body-container{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.main-text{
+    font-size: 52px;
+}
+
+.image-container{
+    width: 400px;
+    height: 500px;
+    background-color: gray;
+    margin-left: 250px;
+}
+
+.menu-container{
+    margin-left: 150px;  
+    flex-direction: column;
+    align-items: self-start;
+}
+
+.second-line {
+    display: block;
+}
+
+.star-list {
+    display: flex;
+    list-style: none;
+}
+
+.text {
+    margin-left: 15px;
+    font-size: 20px
+}
+
+.size-text{
+    font-size: 26px;
+}
+
+.size-buttons{
+    display: flex;
+    list-style: none;
+}
+
+.button {
+    border-color: gray;
+    border-width: 2px;
+    border-style: solid;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: white;
+    margin-right: 5px;
+    transition: background-color 0.3s ease; 
+}
+
+.button:hover {
+    background-color: #f0f0f0;
+}
+
+.button.selected {
+    background-color: gray; 
+    color: white; 
+}
+
+.button-container {
+    display: flex;             
+    gap: 10px;                 
+    justify-content: center;   
+    align-items: center;       
+}
+
+
+.buy-button {
+    background-color: #8A33FD;
+    width: 80px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    border: none; 
+}
+
+.price-button {
+    border: 1px solid black;  
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 0; 
+}

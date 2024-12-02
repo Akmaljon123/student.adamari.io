@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="shop-header.css">
+    <link rel="stylesheet" href="shop_body.css">
+    <link rel="stylesheet" href="shop_footer.css">
+    <title>Document</title>
+</head>
+
+<header class="main-header">
+    <h class="main-text">Adamari</h>
+
+    <li class="header-list">
+        <ul class="element">Shop</ul>
+        <ul class="element">Men</ul>
+        <ul class="element">Women</ul>
+        <ul class="element">Combos</ul>
+        <ul class="element">Joggers</ul>
+    </li>
+
+    <div class="search-container">
+        <input type="text" id="input" class="user-input" placeholder="Search">
+    </div>
+
+    <ul class="options-list">
+        <li class="heart"><img src="../assets/heart.png" alt="Heart"></li>
+        <li class="user"><img src="../assets/user.png" alt="User"></li>
+        <li class="shopping"><img src="../assets/shopping-cart.png" alt="Shopping Cart"></li>
+    </ul>    
+</header>
+
+<body>
+    <div class="body-container">
+        <div class="image-container">
+        
+        </div>
+    
+        <div class="menu-container">
+            <h3 class="main-text">Raven Hoodie with <span class="second-line">Black colored Design</span></h3>
+            
+            <li class="star-list">
+                <ul class="star"><img src="../assets/Star.png" alt=""></ul>
+                <ul class="star"><img src="../assets/Star.png" alt=""></ul>
+                <ul class="star"><img src="../assets/Star.png" alt=""></ul>
+                <ul class="star"><img src="../assets/Star.png" alt=""></ul>
+                <ul class="star"><img src="../assets/Star.png" alt=""></ul>
+                <ul class="text">3.5</ul>
+            </li>
+
+            <p class="size-text">Select Size</p>
+
+            <ul class="size-buttons">
+                <li><button class="button">XS</button></li>
+                <li><button class="button">S</button></li>
+                <li><button class="button">M</button></li>
+                <li><button class="button">L</button></li>
+                <li><button class="button">XL</button></li>
+            </ul>
+
+            <div class="button-container">
+                <button class="buy-button" onclick="window.location.href='confirmation_index.html'">Buy Now</button>
+                <button class="price-button">$99.99</button>
+            </div>
+            
+                        
+        </div>
+        
+    </div>
+
+    <script>
+    document.querySelectorAll('.button').forEach(button => {
+        button.addEventListener('click', function() {
+            document.querySelectorAll('.button').forEach(btn => btn.classList.remove('selected'));
+            this.classList.add('selected');
+        });
+    });
+
+
+    </script>
+</body>
+
+<footer class="main-footer">
+    <div class="footer-container">
+        <div class="footer-column">
+            <h4>Need Help</h4>
+            <ul>
+                <li>Contact Us</li>
+                <li>Track Order</li>
+                <li>Returns & Refunds</li>
+                <li>FAQ's</li>
+                <li>Career</li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h4>Company</h4>
+            <ul>
+                <li>About Us</li>
+                <li>euphoria Blog</li>
+                <li>euphoriastan</li>
+                <li>Collaboration</li>
+                <li>Media</li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h4>More Info</h4>
+            <ul>
+                <li>Term and Conditions</li>
+                <li>Privacy Policy</li>
+                <li>Shipping Policy</li>
+                <li>Sitemap</li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h4>Location</h4>
+            <ul>
+                <li>support@euphoria.in</li>
+                <li>Eklingpura Chouraha, Ahmedabad Main Road</li>
+                <li>(NH 8 - Near Mahadev Hotel) Udaipur, India- 313002</li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+</html>

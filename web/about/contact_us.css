@@ -1,0 +1,45 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.main-text {
+    font-size: 40px; 
+    font-weight: bold;
+    color: #5A2DFF;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+p {
+    font-size: 26px;
+    color: #555; 
+    margin: 10px 0;
+    text-align: center;
+}
+
+.telegram, .phone_number, .gmail {
+    transition: color 0.3s ease;
+}
+
+.telegram:hover, .phone_number:hover, .gmail:hover {
+    color: #5A2DFF;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px; 
+    margin-top: 50px;
+}

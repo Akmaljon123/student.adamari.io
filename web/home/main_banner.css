@@ -1,0 +1,106 @@
+.banner-containers {
+    background-color: aqua;
+    width: 100%;
+    height: 650px;
+    overflow: hidden;
+    display: flex; 
+    justify-content: center;
+}
+
+.banners {
+    display: flex;
+    height: 650px; /* Maintain the original height */
+    transition: transform 0.5s ease-in-out;
+    width: 200%;
+}
+
+.banner {
+    width: 100%; /* Ensures each banner takes the full width */
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 300px;
+}
+
+.small-text,
+.medium-text,
+.large-text {
+    margin: 30px 0; /* Add spacing between text elements */
+}
+
+.small-text,
+.medium-text {
+    color: white;
+    font-size: 46px;
+}
+
+.large-text {
+    color: white;
+    font-weight: bold;
+    font-size: 76px;
+}
+
+.large-text span {
+    color: white;
+    font-weight: bold;
+    display: block;
+    font-size: 76px;
+}
+
+.image-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    max-width: 100%; 
+    height: 660px;
+}
+
+
+.scroll-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgb(21, 221, 232);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 10px;
+}
+
+.left-button {
+    left: 10px;
+}
+
+.right-button {
+    right: 10px;
+}
+
+.scroll-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.buy-button{
+    width: 100px;
+    height: 40px;
+    background-color: white;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.buy-button:hover{
+    background-color: whitesmoke;
+}
